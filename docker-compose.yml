@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  container1:
+    image: hello-world
+  container2:
+    image: hello-world
+  gerador-dados:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./data:/data
